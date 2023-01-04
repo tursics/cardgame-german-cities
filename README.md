@@ -2,6 +2,29 @@
 
 Open Data
 
+## Data Selection
+
+- City name
+- City population
+- City image of shape
+- City image of 1 sight
+- Space: 
+- Sky: Percentage of white xmas
+- Air: Number of airfields and heliports -> as little symbols
+- Car: length of freeways (count Kilometerpunkte BAB)
+- Bike or public transportation:
+- People:
+- Nature: ? Waldfläche ?
+- Ground:
+
+## Wikidata
+
+[Link to Wikidata](https://query.wikidata.org/sparql?query=%23defaultView%3AImageGrid%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fpopulation%20%3Frs%20%3Fnamed%20%3Fimage%20%3Fflag%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22de%22.%20%7D%0A%20%20%7B%0A%20%20%20%20SELECT%20DISTINCT%20%3Fitem%20WHERE%20%7B%0A%20%20%20%20%20%20%3Fitem%20p%3AP1082%2Fpsv%3AP1082%2Fwikibase%3AquantityAmount%20%3Fpopulation_.%0A%20%20%20%20%20%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279*%20wd%3AQ515%20.%0A%20%20%20%20%20%20%3Fitem%20wdt%3AP17%2Fwdt%3AP279*%20wd%3AQ183%20.%0A%20%20%20%20%20%20FILTER(%3Fpopulation_%20%3E%20%22100000%22%5E%5Exsd%3Adecimal)%0A%20%20%20%20%7D%0A%20%20%20%20LIMIT%20100%0A%20%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP1082%20%3Fpopulation%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP1388%20%3Frs%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage%20%7D%0A%23%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP41%20%3Fflag%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP138%20%3Fnamed%20%7D%0A%7D%0AORDER%20BY%20DESC(%3Fpopulation))
+
+List of all cities in Germany with a minimum of 100.000 people. Show an image and Regionalschlüssel.
+
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0ASELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3Fpopulation%20%3Frs%20%3Fnamed%20%3Fimage%20%3Fflag%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22de%22.%20%7D%0A%20%20%7B%0A%20%20%20%20SELECT%20DISTINCT%20%3Fitem%20WHERE%20%7B%0A%20%20%20%20%20%20%3Fitem%20p%3AP1082%2Fpsv%3AP1082%2Fwikibase%3AquantityAmount%20%3Fpopulation_.%0A%20%20%20%20%20%20%3Fitem%20wdt%3AP31%2Fwdt%3AP279*%20wd%3AQ515%20.%0A%20%20%20%20%20%20%3Fitem%20wdt%3AP17%2Fwdt%3AP279*%20wd%3AQ183%20.%0A%20%20%20%20%20%20FILTER(%3Fpopulation_%20%3E%20%22100000%22%5E%5Exsd%3Adecimal)%0A%20%20%20%20%7D%0A%20%20%20%20LIMIT%20100%0A%20%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP1082%20%3Fpopulation%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP1388%20%3Frs%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP18%20%3Fimage%20%7D%0A%23%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP41%20%3Fflag%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP138%20%3Fnamed%20%7D%0A%7D%0AORDER%20BY%20DESC(%3Fpopulation)" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
 ## Data Sources
 
 - WFS Points Of Interest Open

@@ -25,6 +25,27 @@ List of all cities in Germany with a minimum of 100.000 people. Show an image an
 - [Show query](https://w.wiki/6BqR)
 - [Show result](https://w.wiki/6BqT)
 
+```
+#defaultView:ImageGrid
+SELECT DISTINCT ?item ?itemLabel ?population ?rs ?named ?image ?flag WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de". }
+  {
+    SELECT DISTINCT ?item WHERE {
+      ?item p:P1082/psv:P1082/wikibase:quantityAmount ?population_.
+      ?item wdt:P31/wdt:P279* wd:Q515 .
+      ?item wdt:P17/wdt:P279* wd:Q183 .
+      FILTER(?population_ > "100000"^^xsd:decimal)
+    }
+    LIMIT 100
+  }
+  OPTIONAL { ?item wdt:P1082 ?population }
+  OPTIONAL { ?item wdt:P1388 ?rs }
+  OPTIONAL { ?item wdt:P18 ?image }
+#  OPTIONAL { ?item wdt:P41 ?flag }
+  OPTIONAL { ?item wdt:P138 ?named }
+}
+ORDER BY DESC(?population)
+```
 
 ## Data Sources
 
@@ -55,3 +76,7 @@ List of all cities in Germany with a minimum of 100.000 people. Show an image an
   - https://www.mcloud.de/web/guest/suche/-/results/filter/relevance/spatial%3A5%252E295%2C54%252E952%2C14%252E611%2C47%252E100/1/detail/36512b46-f3aa-4aa4-8281-7584ec46c813
 - Baumkataster Bundeseisenbahnvermögen (BEV)
   - https://www.mcloud.de/web/guest/suche/-/results/filter/relevance/spatial%3A5%252E295%2C54%252E952%2C14%252E611%2C47%252E100/0/detail/691202bd-cb41-47c7-a402-cb1d7fe280d7
+
+Other sources
+
+- https://interaktiv.waz.de/schnee-an-weihnachten/

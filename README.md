@@ -4,13 +4,14 @@ Open Data
 
 ## Data Selection
 
-- City name
-- City population
-- City image of shape
-- City image of 1 sight
+- ✅ City: name
+- ✅ City: population
+- City: image of shape
+- ✅ City: image of 1 sight
+- City: image of flag
 - Space: 
-- Sky: Percentage of white xmas
-- Air: Number of airfields and heliports -> as little symbols
+- ✅ Sky: Percentage of white xmas
+- ✅ Air: Number of airfields and heliports -> as little symbols
 - Car: length of freeways (count Kilometerpunkte BAB)
 - Bike or public transportation:
 - People:
@@ -80,3 +81,4 @@ ORDER BY DESC(?population)
 Other sources
 
 - https://interaktiv.waz.de/schnee-an-weihnachten/
+- https://registry.gdi-de.org/item/6db96b7d-e30a-4fa2-b37c-681a6b702ec0

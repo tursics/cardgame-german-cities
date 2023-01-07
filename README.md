@@ -77,6 +77,15 @@ ORDER BY DESC(?population)
   - https://www.mcloud.de/web/guest/suche/-/results/filter/relevance/spatial%3A5%252E295%2C54%252E952%2C14%252E611%2C47%252E100/1/detail/36512b46-f3aa-4aa4-8281-7584ec46c813
 - Baumkataster Bundeseisenbahnvermögen (BEV)
   - https://www.mcloud.de/web/guest/suche/-/results/filter/relevance/spatial%3A5%252E295%2C54%252E952%2C14%252E611%2C47%252E100/0/detail/691202bd-cb41-47c7-a402-cb1d7fe280d7
+- nächster freie Termin im Bürgeramt / Bürgerservice
+  - individuelle Abfrage
+- Kinderarmut
+  - X Prozent der Bevölkerung unter 15 Jahren erhalten - selbst (NEF) oder indirekt (NLB) durch die Bedarfsgemeinschaft - Sozialgeld nach SGB II. In diesem Zusammenhang erfolgte rückwirkend bis 2006 eine Anpassung der Wegweiser-Daten an die zum 28.04.2016 erfolgte Revision der SGB II-Statistik durch die Bundesagentur für Arbeit. Bezieher von Kinderzuschlag sind nicht erfasst. Für einige Bundesländer liegen die Daten nur auf Kreisebene vor.
+  - Anzahl Nicht-Erwerbsfähige Leistungsbezieher:innen (LB) unter 15 Jahre + Nicht Leistungsberechtigte (NLB) unter 15 Jahre (Stichtag: im Dezember) / Anzahl Einwohner:innen unter 15 Jahren * 100
+  - https://www.wegweiser-kommune.de/daten/kinderarmut+kommunen-mit-100000-einwohnern+2020+tabelle
+  - Quelle: Statistische Ämter der Länder, Bundesagentur für Arbeit, ZEFIR, eigene Berechnungen
+  - Lizenz: Datenlizenz Deutschland - Namensnennung - Version 2.0
+  - Quellenangabe „Bertelsmann Stiftung/www.wegweiser-kommune.de“
 
 Other sources
 

@@ -4,19 +4,35 @@ Open Data
 
 ## Data Selection
 
-- ✅ City: name
-- ✅ City: population
-- City: image of shape
-- ✅ City: image of 1 sight
-- City: image of flag
-- Space: 
-- ✅ Sky: Percentage of white xmas
-- ✅ Air: Number of airfields and heliports -> as little symbols
-- Car: length of freeways (count Kilometerpunkte BAB)
-- Bike or public transportation:
-- People:
-- Nature: ? Waldfläche ?
-- Ground:
+Select 40 biggest cities in Germany by population. Show in play card:
+
+- ✅ image of city
+- ✅ name of city
+- ✅ population of city
+- ✅ percentage of white christmas
+  - in period of 1950 to 1970
+  - in period of 2000 to 2020
+- ✅ count ports in total
+  - count airports
+  - count heliports
+  - count seaports
+- ✅ child poverty
+- ✅ next possible online appointment
+
+Some more details for the data:
+
+category         | source            | type     | type
+-----------------|-------------------|----------|------------
+image of city    | Wikimedia Commons | service  | image
+name of city     | Wiki Data         | service  | Linked data service -> download
+population       | Wiki Data         | service  | Linked data service -> download
+white christmas  | WAZ media         | service  | processed data, ddj
+ports            | mCloud / GovData  | WFS      | geo data
+child poverty    | Wegweiser Kommune | service  | data
+next appointment | city websites     | manually |
+
+## Data Selection
+
 
 ## Wikidata
 
